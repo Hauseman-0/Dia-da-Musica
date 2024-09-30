@@ -1,0 +1,151 @@
+/* Estilos gerais para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #f0f0f0;
+    color: #333;
+    transition: background 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: #fff;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+/* Estilos para a lista de navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para os itens da lista de navegação */
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+/* Estilos para os links de navegação */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: #FF6347;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+/* Estilos para os links de navegação ao passar o mouse */
+nav ul li a:hover {
+    background: #FF4500;
+}
+
+/* Estilos para o link ativo de navegação */
+nav ul li a.active {
+    border-bottom: 2px solid #FF6347;
+    background: #FF4500;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+    padding: 2rem;
+    background: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Margem inferior para seções */
+section {
+    margin-bottom: 2rem;
+}
+
+/* Estilos para imagens responsivas */
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    transition: transform 0.3s;
+}
+
+/* Efeito de zoom ao passar o mouse sobre a imagem */
+.responsive-img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para botões */
+button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: #FF6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+/* Estilos para os botões ao passar o mouse */
+button:hover {
+    background: #FF4500;
+    transform: scale(1.05);
+}
+
+/* Estilos para o rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Animação de fade in para o conteúdo principal */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Estilos específicos para centralizar nomes e imagens dos artistas */
+#artists-content ol {
+    /* Remove o padding e o estilo da lista */
+    padding: 0;
+    list-style: none;
+}
+
+#artists-content ol li {
+    /* Centraliza o texto e adiciona margem inferior */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.artist-img {
+    /* Define a largura máxima e altura automática para manter a proporção da imagem */
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de zoom ao passar o mouse sobre a imagem do artista */
+.artist-img:hover {
+    transform: scale(1.05);
+}
